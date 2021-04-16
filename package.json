@@ -1,0 +1,30 @@
+{
+  "name": "ringcentral",
+  "version": "1.0.0",
+  "description": "Regression suite automation",
+  "main": "index.js",
+  "license": "ISC",
+  "scripts": {
+    "start": "webdriver-manager start &",
+    "test": "protractor conf.js",
+    "outbound": "protractor conf.js --suite Outbound",
+    "inbound": "protractor conf.js --suite Inbound",
+    "ivr": "protractor conf.js --suite IVR",
+    "hci": "protractor conf.js --suite HCI",
+    "safedial": "protractor conf.js --suite Safedial",
+    "updatelogin": "protractor conf.js --suite Updatelogin",
+    "supervisor": "protractor conf.js --suite Supervisor",
+    "leadlist": "protractor conf.js --suite Leadlist"
+  },
+  "author": "Tapaswi Kumar",
+  "dependencies": {
+    "jasmine": "^3.5.0",
+    "jasmine-reporters": "^2.3.2",
+    "nodemailer": "^6.4.2",
+    "protractor": "^5.4.2",
+    "protractor-html-reporter-2": "^1.0.4",
+    "webdriver-manager": "^12.1.4",
+    "zip-folder": "^1.0.0",
+    "xlsx-to-json": "^0.3.0"
+  }
+}

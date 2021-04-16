@@ -9,7 +9,7 @@ var AdminHomePage= function(){
     this.CampaignLnk=$("a[href='#/campaigns']");
     this.InboundLnk=$("a[href='#/queues']");
 
-    //Generic Functions
+    //Generic Functions for admin
     this.DashBoardName = function () {	return this.DashBoardNameField.getText()};
     this.ClickOnDashboard=function(){ DasboardLink.click()};
     this.AccountName= function () {	return this.AccountNameField.getText()};
@@ -36,6 +36,5 @@ var AdminHomePage= function(){
             }
         })
     }
-
 }
 module.exports = new AdminHomePage();
